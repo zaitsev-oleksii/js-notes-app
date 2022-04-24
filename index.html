@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Note app</title>
+    <style>
+      #notes th, td {
+          padding: 3px 10px 3px 10px;
+          border: 1px solid;
+      }
+      #forms div {
+        width: 600px;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 16px;
+      }
+      #forms div input {
+        width: 150px;
+      }
+      #forms div select {
+        width: 150px;
+      }
+      .note-archived td {
+        background-color: rgb(200,200,200);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="table-block">
+
+    </div>
+    <!-- <table id="notes">
+        <tr>
+          <th rowspan="2">Id</th>
+          <th rowspan="2">Time of creation</th>
+          <th colspan="2">Content</th>
+          <th rowspan="2">Category</th>
+        </tr>
+        <tr>
+          <th>Text</th>
+          <th>Dates</th>
+        </tr>
+    </table> -->
+
+    <div id="forms">
+      <!-- <div id="addNoteBlock">
+        <h3>Add note: </h3>
+        <input id="addNoteContent" placeholder="Note text" />
+        <select id="addNoteCategory">
+          <option>Task</option>
+          <option>Random Thought</option>
+          <option>Idea</option>
+        </select>
+        <input id="addNoteButton" type="button" value="Add note">
+      </div>
+
+      <div id="editNoteBlock">
+        <h3>Edit note: </h3>
+        <input id="editNoteContent" placeholder="Note text" />
+        <select id="editNoteCategory">
+          <option>Task</option>
+          <option>Random Thought</option>
+          <option>Idea</option>
+        </select>
+        <input id="editNoteButton" type="button" value="Edit note">
+      </div>
+
+      <div id="deleteNoteBlock">
+        <h3>Delete note: </h3>
+        <input id="deleteNoteId" placeholder="Note id" />
+        <input id="deleteNoteButton" type="button" value="Delete note">
+      </div> -->
+    </div>
+    
+    <script type="module" src="./src/index.js"></script>
+  </body>
+</html>
